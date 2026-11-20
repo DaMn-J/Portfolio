@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aarav Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <a href="#home" class="logo">Darsh./></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch dark or light mode">🌙</button>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hello, I'm</p>
+        <h1>Darsh Mohan</h1>
+        <p class="role">First-semester B.Tech Computer Science student</p>
+        <p class="intro">
+          I am just starting my journey in programming and web development.
+          I enjoy learning new things and building small projects.
+        </p>
+        <a href="#projects" class="btn">View my projects</a>
+        <a href="#contact" class="btn btn-outline">Contact me</a>
+      </div>
+      <div class="hero-photo" aria-label="Profile photo placeholder">DM.</div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>
+          Hi! I am Darsh, a curious and hard-working student. I got interested in
+          computers while playing around with games and later wanted to learn how
+          they are made. I am currently learning Cpp programming,ML and basic web
+          development.
+        </p>
+        <ul class="details">
+          <li><strong>Name:</strong> Darsh Mohan</li>
+          <li><strong>Age:</strong> 18</li>
+          <li><strong>Location:</strong> Ghaziabad, Uttar Pradesh</li>
+          <li><strong>Course:</strong> B.Tech Computer Science</li>
+          <li><strong>Semester:</strong> 1st</li>
+          <li><strong>Interests:</strong> Coding, Chess, Music, Gaming</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="edu-card">
+          <h3>B.Tech in Computer Science</h3>
+          <p class="meta">KIET University &bull; 2026 &ndash; Present</p>
+          <p>Currently in 1st semester. Subjects: Programming in Cpp, Engineering Mathematics, Physics, Digital Electronics.</p>
+        </div>
+        <div class="edu-card">
+          <h3>Class XII (Senior Secondary)</h3>
+          <p class="meta">Trident Public School &bull; 2026</p>
+          <p>Science stream (PCM). Score: 90.4%.</p>
+        </div>
+        <div class="edu-card">
+          <h3>Class X (Secondary)</h3>
+          <p class="meta">D.A.V Public School &bull; 2023</p>
+          <p>Score: 92.8%.</p>
+        </div>
+      </div>
+    </section>
+
+  
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-wrap">
+        <div class="skill-box">
+          <h3>Technical Skills</h3>
+          <ul class="skill-list">
+            <li><span>HTML</span><div class="bar"><div class="fill" data-level="70"></div></div></li>
+            <li><span>CSS</span><div class="bar"><div class="fill" data-level="60"></div></div></li>
+            <li><span>JavaScript</span><div class="bar"><div class="fill" data-level="40"></div></div></li>
+            <li><span>Cpp Programming</span><div class="bar"><div class="fill" data-level="85"></div></div></li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Non-Technical Skills</h3>
+          <ul class="tags">
+            <li>Communication</li>
+            <li>Teamwork</li>
+            <li>Time management</li>
+            <li>Problem solving</li>
+            <li>Quick learner</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Calculator in Cpp</h3>
+          <p>A simple command-line calculator that performs basic arithmetic using functions and switch-case.</p>
+          <p class="tech">Cpp</p>
+        </article>
+        <article class="project-card">
+          <h3>Personal Web Page</h3>
+          <p>My first web page built with HTML and CSS to practice tags, links and layouts.</p>
+          <p class="tech">HTML, CSS</p>
+        </article>
+        <article class="project-card">
+          <h3>E-Commerce Product Website</h3>
+          <p>AN online Shopping interface with product cards, categories, product search, price display built while learning javascript.</p>
+          <p class="tech">HTML, CSS, JavaScript</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name">
+          <small class="error" id="nameError"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="you@example.com">
+          <small class="error" id="emailError"></small>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message (at least 10 characters)"></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+        <button type="submit" class="btn">Send message</button>
+        <p id="formSuccess" class="success"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Darsh Mohan. Built with HTML, CSS and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
